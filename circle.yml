@@ -1,0 +1,14 @@
+
+dependencies:
+  pre:
+    - npm --version
+    - npm install -g npm
+    - npm --version
+    - node --version
+  override:
+    - npm install
+
+    
+test:
+  override:
+    - npm run test && build
